@@ -1,5 +1,5 @@
 from config import *
-from Utilities import practiscore
+from Utilities import filehandler, practiscore
 
 
 ## Practiscore Match ID dates/events
@@ -7,5 +7,7 @@ from Utilities import practiscore
 # 09/07/2022: 180171 2022 SIG Sauer Carry Optics Nationals presented by Federal
 
 
-start_id = 156586
-practiscore.download_all(start_id=156586)
+# start_id = 169016
+# practiscore.download_all(start_id=start_id)
+
+filehandler.convert_to_json()
