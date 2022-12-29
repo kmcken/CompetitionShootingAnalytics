@@ -1,9 +1,7 @@
 from config import *
 from Utilities import filehandler
-import requests
 from lxml import etree
 from io import StringIO
-import pandas as pd
 
 
 class Match:
@@ -28,6 +26,69 @@ class Stage:
         self.classifier = None          # Is a classifier (bool)
         self.classifier_number = None   # Classifier Number
         self.scores = None              # List of scores
+
+
+def competitor_list(match_file=root + '/Data/major_matches.json', level=3):
+    """
+    Creates a list of competitors
+
+    :param match_file: file path to .json match list
+    :type match_file: str
+    :param level: match level
+    :type level: int
+    :return: Data frame of all competitors
+    :rtype: pd.DataFrame
+    """
+
+    if level == 3:
+        matches = filehandler.read_json(match_file)['level3'][0]
+    else:
+        print('Not level 3')
+        return
+
+    df = pd.DataFrame(columns=['firstname', 'lastname', 'uspsa', 'number', 'match', 'division', 'class', 'percent'])
+    for match in matches:
+        file = root + '/Data/jsonFiles/' + str(match['practiscore_id']) + '.json'
+        scores = filehandler.read_json(file)['overall']
+        for score in scores:
+            number = ''.join(c for c in score['uspsa_num'] if c.isdigit())
+            try:
+                number = int(number)
+            except:
+                number = 0
+            df.loc[len(df.index)] = [score['firstname'], score['lastname'], score['uspsa_num'], number,
+                                     match['match_name'], score['division'], score['class'], score['percent']]
+    return df
+
+
+def majors_list(directory=root+'/Data/jsonFiles/'):
+    file_list = os.listdir(directory)
+    majors_file = root + '/Data/major_matches.json'
+    level2, level3 = list(), list()
+    for file in file_list:
+        path = root + '/Data/jsonFiles/' + file
+        data = filehandler.read_json(path)
+        info = {
+            "match_name": data['match_name'],
+            "date": data['date'],
+            "unix": data['unix'],
+            "practiscore_id": data['practiscore_id'],
+            "club": data['club'],
+            "club_code": data['club_code'],
+            "level": data['level']
+        }
+        if data['level'] == 2:
+            level2.append(info)
+        if data['level'] == 3:
+            level3.append(info)
+
+    data = {
+        "level2_count": len(level2),
+        "level3_count": len(level3),
+        "level2": [level2],
+        "level3": [level3]
+    }
+    filehandler.add_to_json(majors_file, data)
 
 
 def data_to_unix(date):
@@ -59,7 +120,7 @@ def download_match(match_id, level=2):
     :param level: If level == 2, then returns level 2+ matches, if level == 3, then level 3 matches only, else all
     :type level: bool
     """
-    file = root + '/MatchResults/' + str(match_id) + '.txt'
+    file = root + '/Data/txtFiles/' + str(match_id) + '.txt'
 
     if os.path.isfile(file) is True:
         print(match_id, 'is already downloaded.')
@@ -140,7 +201,7 @@ def txt_to_json(file):
     Converts practiscore txt file to json
     """
     match_id = file.split('/')[-1].strip('.txt')
-    jfile = root + '/MatchResults/jsonFiles/' + match_id + '.json'
+    jfile = root + '/Data/jsonFiles/' + match_id + '.json'
     header = json_header(file=file)
     overall = json_overall(file)
     stages = json_stages(file)
@@ -182,6 +243,7 @@ def json_header(file):
     data = {
         'version': version,
         'practiscore_id': int(file.split('/')[-1].strip('.txt')),
+        'uspsa_id': False,
         'practiscore_version': get_info('PractiScore_Version', info_list),
         'match_name': get_info('match name', info_list),
         'date': get_info('match date', info_list),

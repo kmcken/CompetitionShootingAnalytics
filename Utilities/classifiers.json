@@ -1,0 +1,1337 @@
+{
+    "source": "uspsa.org",
+    "total": 126,
+    "retired": 40,
+    "stage": [
+        {
+            "number": "03-02",
+            "name": "Six Chickens",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Open",
+                    "value": 8.7316
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Carry Optics",
+                    "value": 7.159
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited",
+                    "value": 8.098
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited 10",
+                    "value": 8.098
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "PCC",
+                    "value": 8.8537
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Production",
+                    "value": 7.1283
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Single Stack",
+                    "value": 6.8103
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Revolver",
+                    "value": 5.704
+                }
+            ]
+        },
+        {
+            "number": "03-03",
+            "name": "Take em Down",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Open",
+                    "value": 9.4099
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Carry Optics",
+                    "value": 8.2842
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited",
+                    "value": 8.8509
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited 10",
+                    "value": 8.8509
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "PCC",
+                    "value": 8.5864
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Production",
+                    "value": 8.1398
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Single Stack",
+                    "value": 7.6226
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Revolver",
+                    "value": 5.3679
+                }
+            ]
+        },
+        {
+            "number": "03-04",
+            "name": "3-V",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Open",
+                    "value": 11.8391
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Carry Optics",
+                    "value": 9.4499
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited",
+                    "value": 10.778
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited 10",
+                    "value": 10.778
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "PCC",
+                    "value": 10.4036
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Production",
+                    "value": 9.341
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Single Stack",
+                    "value": 9.5045
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Revolver",
+                    "value": 6.4774
+                }
+            ]
+        },
+        {
+            "number": "03-05",
+            "name": "Paper Poppers",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Open",
+                    "value": 11.7506
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Carry Optics",
+                    "value": 10.1437
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited",
+                    "value": 10.4977
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited 10",
+                    "value": 10.4977
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "PCC",
+                    "value": 11.1348
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Production",
+                    "value": 10.1376
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Single Stack",
+                    "value": 10.312
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Revolver",
+                    "value": 7.9055
+                }
+            ]
+        },
+        {
+            "number": "03-07",
+            "name": "Riverdale Standards",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Open",
+                    "value": 8.4324
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Carry Optics",
+                    "value": 7.1572
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited",
+                    "value": 8.0271
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited 10",
+                    "value": 8.0271
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "PCC",
+                    "value": 8.9564
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Production",
+                    "value": 7.1572
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Single Stack",
+                    "value": 7.5451
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Revolver",
+                    "value": 5.4718
+                }
+            ]
+        },
+        {
+            "number": "03-08",
+            "name": "Madness",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Open",
+                    "value": 11.926
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Carry Optics",
+                    "value": 9.6707
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited",
+                    "value": 10.55
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited 10",
+                    "value": 10.55
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "PCC",
+                    "value": 10.6643
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Production",
+                    "value": 9.647
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Single Stack",
+                    "value": 9.4285
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Revolver",
+                    "value": 6.6786
+                }
+            ]
+        },
+        {
+            "number": "03-09",
+            "name": "On the Move",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Open",
+                    "value": 12.6808
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Carry Optics",
+                    "value": 11.2743
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited",
+                    "value": 11.3955
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited 10",
+                    "value": 11.3955
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "PCC",
+                    "value": 13.4224
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Production",
+                    "value": 10.906
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Single Stack",
+                    "value": 11.028
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Revolver",
+                    "value": 7.9866
+                }
+            ]
+        },
+        {
+            "number": "03-10",
+            "name": "Area 5 Standards",
+            "retired": true
+        },
+        {
+            "number": "03-11",
+            "name": "El Strong & Weak Pres",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Open",
+                    "value": 8.6354
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Carry Optics",
+                    "value": 6.8525
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited",
+                    "value": 7.8254
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Limited 10",
+                    "value": 7.825
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "PCC",
+                    "value": 9.7843
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Production",
+                    "value": 6.8525
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Single Stack",
+                    "value": 6.7991
+                },
+                {
+                    "data_accessed": "09/21/2022",
+                    "unix": 1663740000,
+                    "division": "Revolver",
+                    "value": 5.0206
+                }
+            ]
+        },
+        {
+            "number": "03-12",
+            "name": "Ironsides",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Open",
+                    "value": 8.3239
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Carry Optics",
+                    "value": 6.9347
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Limited",
+                    "value": 7.3594
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Limited 10",
+                    "value": 7.3594
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "PCC",
+                    "value": 7.2621
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Production",
+                    "value": 6.887
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Single Stack",
+                    "value": 6.5347
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Revolver",
+                    "value": 4.9713
+                }
+            ]
+        },
+        {
+            "number": "03-14",
+            "name": "Baseball Standards",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Open",
+                    "value": 111.4
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Carry Optics",
+                    "value": 93.9
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Limited",
+                    "value": 107.0
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Limited 10",
+                    "value": 107.0
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "PCC",
+                    "value": 116.2
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Production",
+                    "value": 93.9
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Single Stack",
+                    "value": 94.9
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Revolver",
+                    "value": 83.6
+                }
+            ]
+        },
+        {
+            "number": "03-18",
+            "name": "High Standards",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Open",
+                    "value": 9.4752
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Carry Optics",
+                    "value": 7.9574
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Limited",
+                    "value": 8.8814
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Limited 10",
+                    "value": 8.8814
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "PCC",
+                    "value": 11.1314
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Production",
+                    "value": 7.9574
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Single Stack",
+                    "value": 8.3423
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Revolver",
+                    "value": 6.4829
+                }
+            ]
+        },
+        {
+            "number": "99-01",
+            "name": "Back to Basics Standards",
+            "retired": true
+        },
+        {
+            "number": "99-02",
+            "name": "Night Moves",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Open",
+                    "value": "7.7051"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Carry Optics",
+                    "value": "6.7923"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Limited",
+                    "value": "7.3567"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Limited 10",
+                    "value": "7.3567"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "PCC",
+                    "value": "7.0794"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Production",
+                    "value": "6.7923"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Single Stack",
+                    "value": "6.6366"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Revolver",
+                    "value": "5.5569"
+                }
+            ]
+        },
+        {
+            "number": "99-03",
+            "name": "Celeritas and Diligentia",
+            "retired": true
+        },
+        {
+            "number": "99-04",
+            "name": "American Standard",
+            "retired": true
+        },
+        {
+            "number": "99-05",
+            "name": "Mob Job",
+            "retired": true
+        },
+        {
+            "number": "99-06",
+            "name": "Toe The Line",
+            "retired": true
+        },
+        {
+            "number": "99-07",
+            "name": "Both Sides Now #1",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Open",
+                    "value": "9.298"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Limited",
+                    "value": "7.7885"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Limited 10",
+                    "value": "7.7885"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Production",
+                    "value": "7.1581"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Revolver",
+                    "value": "5.6208"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Single Stack",
+                    "value": "7.2185"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Carry Optics",
+                    "value": "7.7946"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "PCC",
+                    "value": "8.1657"
+                }
+            ]
+        },
+        {
+            "number": "99-08",
+            "name": "Melody Line",
+            "retired": false,
+            "hhf": [
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Open",
+                    "value": "11.8006"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Limited",
+                    "value": "10.6766"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Limited 10",
+                    "value": "10.6766"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Production",
+                    "value": "9.3922"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Revolver",
+                    "value": "7.4457"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Single Stack",
+                    "value": "9.9094"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "Carry Optics",
+                    "value": "9.6721"
+                },
+                {
+                    "data_accessed": "09/22/2022",
+                    "unix": 1663826400,
+                    "division": "PCC",
+                    "value": "10.601"
+                }
+            ]
+        },
+        {
+            "number": "99-09",
+            "name": "Long Range Standards",
+            "retired": true
+        },
+        {
+            "number": "99-10",
+            "name": "Times Two",
+            "retired": false
+        },
+        {
+            "number": "99-11",
+            "name": "El Presidente",
+            "retired": false
+        },
+        {
+            "number": "99-12",
+            "name": "Take Your Choice",
+            "retired": false
+        },
+        {
+            "number": "99-13",
+            "name": "Quicky II",
+            "retired": false
+        },
+        {
+            "number": "99-14",
+            "name": "Hoser Heaven",
+            "retired": false
+        },
+        {
+            "number": "99-15",
+            "name": "Dilegentia and Celeritas",
+            "retired": true
+        },
+        {
+            "number": "99-16",
+            "name": "Both Sides Now #2",
+            "retired": false
+        },
+        {
+            "number": "99-17",
+            "name": "Its All in the Upper Zone",
+            "retired": true
+        },
+        {
+            "number": "99-18",
+            "name": "You Snooze, You Lose",
+            "retired": true
+        },
+        {
+            "number": "99-19",
+            "name": "Paynes Pain",
+            "retired": false
+        },
+        {
+            "number": "99-20",
+            "name": "Fish House Encounter",
+            "retired": true
+        },
+        {
+            "number": "99-21",
+            "name": "Mini Mart",
+            "retired": false
+        },
+        {
+            "number": "99-22",
+            "name": "Nueve El Presidente",
+            "retired": false
+        },
+        {
+            "number": "99-23",
+            "name": "Front Sight",
+            "retired": false
+        },
+        {
+            "number": "99-24",
+            "name": "Front Sight 2",
+            "retired": false
+        },
+        {
+            "number": "99-27",
+            "name": "Leftys Revenge",
+            "retired": true
+        },
+        {
+            "number": "99-28",
+            "name": "Hillbillton Drill",
+            "retired": false
+        },
+        {
+            "number": "99-29",
+            "name": "Near to Far Standards",
+            "retired": true
+        },
+        {
+            "number": "99-30",
+            "name": "Man Down",
+            "retired": true
+        },
+        {
+            "number": "99-31",
+            "name": "Slow But Sure",
+            "retired": true
+        },
+        {
+            "number": "99-32",
+            "name": "Indoor Rapid Fire Standards",
+            "retired": true
+        },
+        {
+            "number": "99-33",
+            "name": "Raw Deal",
+            "retired": false
+        },
+        {
+            "number": "99-34",
+            "name": "Ported View",
+            "retired": true
+        },
+        {
+            "number": "99-35",
+            "name": "Xmas",
+            "retired": true
+        },
+        {
+            "number": "99-36",
+            "name": "After Work Blues",
+            "retired": true
+        },
+        {
+            "number": "99-37",
+            "name": "Steel One",
+            "retired": true
+        },
+        {
+            "number": "99-38",
+            "name": "The Gauntlet II",
+            "retired": true
+        },
+        {
+            "number": "99-40",
+            "name": "Partial People Eaters",
+            "retired": false
+        },
+        {
+            "number": "99-41",
+            "name": "Works For Me",
+            "retired": false
+        },
+        {
+            "number": "99-42",
+            "name": "Fast n Furious",
+            "retired": false
+        },
+        {
+            "number": "99-43",
+            "name": "Color Blind",
+            "retired": true
+        },
+        {
+            "number": "99-44",
+            "name": "Claim Yumpers of Ballard Creek",
+            "retired": true
+        },
+        {
+            "number": "99-45",
+            "name": "Easy Street",
+            "retired": true
+        },
+        {
+            "number": "99-46",
+            "name": "Close Quarter Standards",
+            "retired": false
+        },
+        {
+            "number": "99-47",
+            "name": "Triple Choice",
+            "retired": false
+        },
+        {
+            "number": "99-48",
+            "name": "Tight Squeeze",
+            "retired": false
+        },
+        {
+            "number": "99-49",
+            "name": "Speed-E-Standards",
+            "retired": true
+        },
+        {
+            "number": "99-50",
+            "name": "Better Make Sure",
+            "retired": true
+        },
+        {
+            "number": "99-51",
+            "name": "Single Tap Standards",
+            "retired": false
+        },
+        {
+            "number": "99-52",
+            "name": "Cash n Carry",
+            "retired": true
+        },
+        {
+            "number": "99-53",
+            "name": "Triple Play",
+            "retired": false
+        },
+        {
+            "number": "99-54",
+            "name": "Tuff Enough Standards",
+            "retired": true
+        },
+        {
+            "number": "99-56",
+            "name": "On the Upper Pad II",
+            "retired": false
+        },
+        {
+            "number": "99-57",
+            "name": "Bookouts Boogie",
+            "retired": false
+        },
+        {
+            "number": "99-59",
+            "name": "Lazy Man Standards",
+            "retired": false
+        },
+        {
+            "number": "99-60",
+            "name": "Cut and Run",
+            "retired": true
+        },
+        {
+            "number": "99-61",
+            "name": "Sit Or Get Off The Shot",
+            "retired": false
+        },
+        {
+            "number": "99-62",
+            "name": "Bang and Clang",
+            "retired": false
+        },
+        {
+            "number": "99-63",
+            "name": "Merles Standards",
+            "retired": false
+        },
+        {
+            "number": "06-01",
+            "name": "Big Barricade",
+            "retired": false
+        },
+        {
+            "number": "06-02",
+            "name": "Big Barricade II",
+            "retired": false
+        },
+        {
+            "number": "06-03",
+            "name": "Can You Count",
+            "retired": false
+        },
+        {
+            "number": "06-04",
+            "name": "Fluffy's Revenge 1",
+            "retired": false
+        },
+        {
+            "number": "06-05",
+            "name": "Fluffy's Revenge 2",
+            "retired": false
+        },
+        {
+            "number": "06-06",
+            "name": "Golden Bullet Standards",
+            "retired": false
+        },
+        {
+            "number": "06-07",
+            "name": "Steely Speed IV",
+            "retired": true
+        },
+        {
+            "number": "06-08",
+            "name": "Steely Speed V",
+            "retired": true
+        },
+        {
+            "number": "06-09",
+            "name": "Steely Speed VI",
+            "retired": true
+        },
+        {
+            "number": "06-10",
+            "name": "Steely Speed VII",
+            "retired": false
+        },
+        {
+            "number": "08-01",
+            "name": "4 Bill Drill",
+            "retired": false
+        },
+        {
+            "number": "08-02",
+            "name": "Steeler Standards",
+            "retired": false
+        },
+        {
+            "number": "08-03",
+            "name": "Six",
+            "retired": false
+        },
+        {
+            "number": "08-04",
+            "name": "Seven",
+            "retired": true
+        },
+        {
+            "number": "08-05",
+            "name": "Long Range Standards 2",
+            "retired": true
+        },
+        {
+            "number": "08-06",
+            "name": "Area 4 Standards",
+            "retired": true
+        },
+        {
+            "number": "09-01",
+            "name": "Six In Six Challenge",
+            "retired": false
+        },
+        {
+            "number": "09-02",
+            "name": "Diamond Cutter",
+            "retired": false
+        },
+        {
+            "number": "09-03",
+            "name": "Oh No",
+            "retired": false
+        },
+        {
+            "number": "09-04",
+            "name": "Pucker Factor",
+            "retired": false
+        },
+        {
+            "number": "09-05",
+            "name": "Quad Standards",
+            "retired": false
+        },
+        {
+            "number": "09-06",
+            "name": "Quad Standards 2",
+            "retired": true
+        },
+        {
+            "number": "09-07",
+            "name": "It's Not Brain Surgery",
+            "retired": false
+        },
+        {
+            "number": "09-08",
+            "name": "Crackerjack",
+            "retired": false
+        },
+        {
+            "number": "09-09",
+            "name": "Lightning And Thunder",
+            "retired": false
+        },
+        {
+            "number": "09-10",
+            "name": "Life's Little Problems",
+            "retired": false
+        },
+        {
+            "number": "09-11",
+            "name": "Razor's Edge",
+            "retired": true
+        },
+        {
+            "number": "09-12",
+            "name": "Any Given Sunday",
+            "retired": true
+        },
+        {
+            "number": "09-13",
+            "name": "Table Stakes",
+            "retired": false
+        },
+        {
+            "number": "09-14",
+            "name": "Eye Of The Tiger",
+            "retired": false
+        },
+        {
+            "number": "13-01",
+            "name": "Disaster Factor",
+            "retired": false
+        },
+        {
+            "number": "13-02",
+            "name": "Down The Middle",
+            "retired": false
+        },
+        {
+            "number": "13-03",
+            "name": "Short Sprint Standards",
+            "retired": false
+        },
+        {
+            "number": "13-04",
+            "name": "The Roscoe Rattle",
+            "retired": false
+        },
+        {
+            "number": "13-05",
+            "name": "Tick Tock",
+            "retired": false
+        },
+        {
+            "number": "13-06",
+            "name": "Too Close For Comfort",
+            "retired": false
+        },
+        {
+            "number": "13-07",
+            "name": "Double Deal 2",
+            "retired": false
+        },
+        {
+            "number": "13-08",
+            "name": "More Disaster Factor",
+            "retired": false
+        },
+        {
+            "number": "13-09",
+            "name": "Window Pain",
+            "retired": true
+        },
+        {
+            "number": "18-01",
+            "name": "Of Course It Did",
+            "retired": false
+        },
+        {
+            "number": "18-02",
+            "name": "What Is With You People",
+            "retired": false
+        },
+        {
+            "number": "18-03",
+            "name": "We Play Games",
+            "retired": false
+        },
+        {
+            "number": "18-04",
+            "name": "Didn\u2019t You Send The Mailman",
+            "retired": false
+        },
+        {
+            "number": "18-05",
+            "name": "No Need To Believe In Either Side",
+            "retired": false
+        },
+        {
+            "number": "18-06",
+            "name": "For That Day",
+            "retired": false
+        },
+        {
+            "number": "18-07",
+            "name": "Someone Is Always Willing To Pay",
+            "retired": false
+        },
+        {
+            "number": "18-08",
+            "name": "The Condor",
+            "retired": false
+        },
+        {
+            "number": "18-09",
+            "name": "I Miss That Kind of Clarity",
+            "retired": false
+        },
+        {
+            "number": "19-01",
+            "name": "HI-Jinx",
+            "retired": false
+        },
+        {
+            "number": "19-02",
+            "name": "HI-Way Robbery",
+            "retired": false
+        },
+        {
+            "number": "19-03",
+            "name": "HI'er Love",
+            "retired": false
+        },
+        {
+            "number": "19-04",
+            "name": "HI Cost of Living",
+            "retired": false
+        },
+        {
+            "number": "20-01",
+            "name": "Wish You Were Here",
+            "retired": false
+        },
+        {
+            "number": "20-02",
+            "name": "Deja Vu",
+            "retired": false
+        },
+        {
+            "number": "20-03",
+            "name": "Deja Vu All Over Again",
+            "retired": false
+        },
+        {
+            "number": "21-01",
+            "name": "8 x 3 Trigger Freeze",
+            "retired": false
+        }
+    ]
+}

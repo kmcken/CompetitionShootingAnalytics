@@ -2,7 +2,7 @@ from config import *
 from Utilities import practiscore as ps
 
 
-def data_to_unix(date):
+def date_to_unix(date):
     date = date.split('/')
     date = datetime.datetime(int(date[2]), int(date[0]), int(date[1]))
     return int(time.mktime(date.timetuple()))
@@ -38,7 +38,7 @@ def read_json(file):
     return jdata
 
 
-def convert_to_json(path=root+'/MatchResults/RawFiles/'):
+def convert_to_json(path=root+'/Data/txtFiles/'):
     file_list = os.listdir(path)
     for file in file_list:
         if file.split('.')[-1] == 'txt':
