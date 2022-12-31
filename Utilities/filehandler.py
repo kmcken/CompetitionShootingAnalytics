@@ -4,7 +4,7 @@ from Utilities import practiscore as ps
 
 def date_to_unix(date):
     date = date.split('/')
-    date = datetime.datetime(int(date[2]), int(date[0]), int(date[1]))
+    date = datetime.datetime(2000 + int(date[2]), int(date[0]), int(date[1]))
     return int(time.mktime(date.timetuple()))
 
 
@@ -43,3 +43,22 @@ def convert_to_json(path=root+'/Data/txtFiles/'):
     for file in file_list:
         if file.split('.')[-1] == 'txt':
             ps.txt_to_json(path + file)
+
+
+def open_database(file=None):
+    if file is None:
+        raise FileNotFoundError('DATABASE: Missing database file input.')
+
+    try:
+        conn = sqlite3.connect(file)
+    except sqlite3.InterfaceError:
+        raise sqlite3.InterfaceError
+    else:
+        cursor = conn.cursor()
+        return cursor, conn
+
+
+def close_database(cursor, conn):
+    cursor.close()
+    conn.close()
+

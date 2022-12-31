@@ -39,7 +39,7 @@
       <recent name="E:\USPSA\Analytics\CompetitionShootingAnalytics\Utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.main">
     <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CompetitionShootingAnalytics" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="practiscore" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="scsa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CompetitionShootingAnalytics" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,7 +94,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utilities/practiscore.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utilities/scsa.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.scsa" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.uspsa" />
         <item itemvalue="Python.config" />
-        <item itemvalue="Python.practiscore" />
       </list>
     </recent_temporary>
   </component>
@@ -175,41 +175,41 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="442" key="FileChooserDialogImpl/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1671568246800" />
-    <state width="2539" height="364" key="GridCell.Tab.0.bottom" timestamp="1670996874862">
+    <state width="2539" height="364" key="GridCell.Tab.0.bottom" timestamp="1672444094614">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="364" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1670996874862" />
+    <state width="2539" height="364" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1672444094614" />
     <state width="1059" height="364" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-329.1080.1880@2560.-329.1080.1880" timestamp="1670920519889" />
     <state width="2539" height="376" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.-329.1080.1920@0.0.2560.1440" timestamp="1667444373323" />
-    <state width="2539" height="364" key="GridCell.Tab.0.center" timestamp="1670996874862">
+    <state width="2539" height="364" key="GridCell.Tab.0.center" timestamp="1672444094614">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="364" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1670996874862" />
+    <state width="2539" height="364" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1672444094614" />
     <state width="1059" height="364" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-329.1080.1880@2560.-329.1080.1880" timestamp="1670920519889" />
     <state width="2539" height="376" key="GridCell.Tab.0.center/0.0.2560.1440/2560.-329.1080.1920@0.0.2560.1440" timestamp="1667444373323" />
-    <state width="2539" height="364" key="GridCell.Tab.0.left" timestamp="1670996874862">
+    <state width="2539" height="364" key="GridCell.Tab.0.left" timestamp="1672444094613">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="364" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1670996874862" />
+    <state width="2539" height="364" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1672444094613" />
     <state width="1059" height="364" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-329.1080.1880@2560.-329.1080.1880" timestamp="1670920519889" />
     <state width="2539" height="376" key="GridCell.Tab.0.left/0.0.2560.1440/2560.-329.1080.1920@0.0.2560.1440" timestamp="1667444373323" />
-    <state width="2539" height="364" key="GridCell.Tab.0.right" timestamp="1670996874862">
+    <state width="2539" height="364" key="GridCell.Tab.0.right" timestamp="1672444094614">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="364" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1670996874862" />
+    <state width="2539" height="364" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1672444094614" />
     <state width="1059" height="364" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-329.1080.1880@2560.-329.1080.1880" timestamp="1670920519889" />
     <state width="2539" height="376" key="GridCell.Tab.0.right/0.0.2560.1440/2560.-329.1080.1920@0.0.2560.1440" timestamp="1667444373323" />
-    <state x="781" y="345" key="SettingsEditor" timestamp="1670906425787">
+    <state x="781" y="345" key="SettingsEditor" timestamp="1672352447901">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1670906425787" />
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1672352447901" />
     <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1670959203609">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1670959203609" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1663715169037">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1672354459195">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1663715169037" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1672354459195" />
   </component>
 </project>
