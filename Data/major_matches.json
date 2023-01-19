@@ -1,0 +1,463 @@
+{
+    "version": "v0.2.2",
+    "level2_count": 41,
+    "level3_count": 9,
+    "level2": [
+        [
+            {
+                "match_name": "WAC 2022 Florida State USPSA Championship",
+                "date": "01/14/2022",
+                "unix": 1642143600,
+                "practiscore_id": 156983,
+                "club": "Gulf Coast Lead Slingers",
+                "club_code": "CFL05",
+                "level": 2
+            },
+            {
+                "match_name": "Florida Open 2022",
+                "date": "02/17/2022",
+                "unix": 1645081200,
+                "practiscore_id": 159557,
+                "club": "Polk County Practical Shooters",
+                "club_code": "CFL03",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Red Hill Tactical Alabama Sectional",
+                "date": "03/11/2022",
+                "unix": 1646982000,
+                "practiscore_id": 161405,
+                "club": "Dothan Gun Club",
+                "club_code": "AL18",
+                "level": 2
+            },
+            {
+                "match_name": "SCPS-SoCal Practical Shooting / ICARUS Grand opening  Presented By ATLAS GUN WORKS",
+                "date": "03/11/2022",
+                "unix": 1646982000,
+                "practiscore_id": 161418,
+                "club": "SOCAL Practical Shooting",
+                "club_code": "SWPL24",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Roadrunner Shootout presented by The Blue Bullets",
+                "date": "03/23/2022",
+                "unix": 1648015200,
+                "practiscore_id": 162570,
+                "club": "Central California Pistol League",
+                "club_code": "CCS02",
+                "level": 2
+            },
+            {
+                "match_name": "USPSA MO21 Ozarks Classic Level II 2Alpha SBRC March 26 2022",
+                "date": "03/26/2022",
+                "unix": 1648274400,
+                "practiscore_id": 162886,
+                "club": "2Alpha Practical Shooters",
+                "club_code": "MO21",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Armscor Bighorn Classic - Colorado State Championship",
+                "date": "04/20/2022",
+                "unix": 1650434400,
+                "practiscore_id": 165303,
+                "club": "Action Pistol Group Uspsa",
+                "club_code": "WCO13",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Golden Bullet Championship  Presented by Carver Custom, Inc.",
+                "date": "04/21/2022",
+                "unix": 1650520800,
+                "practiscore_id": 165314,
+                "club": "Shasta Shooters",
+                "club_code": "CN09",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Immortobot Area 8 DELMARVA Sectional Championship",
+                "date": "04/21/2022",
+                "unix": 1650520800,
+                "practiscore_id": 165379,
+                "club": "Shadow Hawk Defense",
+                "club_code": "va31",
+                "level": 2
+            },
+            {
+                "match_name": "Texas State Open Championship 2022",
+                "date": "04/22/2022",
+                "unix": 1650607200,
+                "practiscore_id": 165396,
+                "club": "Generation Practical Shooters",
+                "club_code": "IPSC100",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Northern Illinois Section Championship ",
+                "date": "04/22/2022",
+                "unix": 1650607200,
+                "practiscore_id": 165692,
+                "club": "Northern Illinois Shooters Assn",
+                "club_code": "NI03",
+                "level": 2
+            },
+            {
+                "match_name": "Double Tap  Championship2022",
+                "date": "04/30/2022",
+                "unix": 1651298400,
+                "practiscore_id": 166164,
+                "club": "Double Tap Ranch Gun Club",
+                "club_code": "Ipsc75",
+                "level": 2
+            },
+            {
+                "match_name": "2022 South Carolina Section Championship sponsored by Davinci Machining and C&C Ammo",
+                "date": "04/28/2022",
+                "unix": 1651125600,
+                "practiscore_id": 166172,
+                "club": "Belton Gun Club",
+                "club_code": "SC21",
+                "level": 2
+            },
+            {
+                "match_name": "2022 LimCat Custom and Precision Delta Mississippi Classic",
+                "date": "05/12/2022",
+                "unix": 1652335200,
+                "practiscore_id": 167357,
+                "club": "Magnolia Practical Shooters",
+                "club_code": "MS06",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Inland Empire Sectional",
+                "date": "05/14/2022",
+                "unix": 1652508000,
+                "practiscore_id": 167683,
+                "club": "EWPSA",
+                "club_code": "IE02",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Northern Arizona Classic",
+                "date": "05/19/2022",
+                "unix": 1652940000,
+                "practiscore_id": 168192,
+                "club": "Prescott Practical Shooters",
+                "club_code": "AZ19",
+                "level": 2
+            },
+            {
+                "match_name": "Techwearusa Mid Atlantic Sectional ",
+                "date": "05/19/2022",
+                "unix": 1652940000,
+                "practiscore_id": 168242,
+                "club": "Ontelaunee Rod & Gun Club",
+                "club_code": "MID03",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Great Plains Section Championship",
+                "date": "05/21/2022",
+                "unix": 1653112800,
+                "practiscore_id": 168302,
+                "club": "Sioux River Sportsmen's Club",
+                "club_code": "GP21",
+                "level": 2
+            },
+            {
+                "match_name": "Cheely Custom Gunworks USPSA Michigan Sectional 2022",
+                "date": "06/03/2022",
+                "unix": 1654236000,
+                "practiscore_id": 169741,
+                "club": "Brooklyn Sportsmans Club ",
+                "club_code": "MI24",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Ohio State CODA Evolution Buckeye Blast",
+                "date": "06/10/2022",
+                "unix": 1654840800,
+                "practiscore_id": 170506,
+                "club": "Briar Rabbit Shooting Sports",
+                "club_code": "OHN07",
+                "level": 2
+            },
+            {
+                "match_name": "2022 USPSA Ruben's Reloading Oklahoma Sectional",
+                "date": "06/10/2022",
+                "unix": 1654840800,
+                "practiscore_id": 170511,
+                "club": "The United States Shooting Academy",
+                "club_code": "OK15",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Treasure State Championship",
+                "date": "06/16/2022",
+                "unix": 1655359200,
+                "practiscore_id": 171344,
+                "club": "Magic City Action Shooters",
+                "club_code": "GYS02",
+                "level": 2
+            },
+            {
+                "match_name": "2022 GFDS Maryland State USPSA Championship",
+                "date": "06/24/2022",
+                "unix": 1656050400,
+                "practiscore_id": 172099,
+                "club": "Thurmont Conservation and Sportsmen Club",
+                "club_code": "VA38",
+                "level": 2
+            },
+            {
+                "match_name": "WAC 10th Annual Gary \"Doc\" Welt Memorial Match 2022",
+                "date": "06/24/2022",
+                "unix": 1656050400,
+                "practiscore_id": 172105,
+                "club": "Gulf Coast Lead Slingers",
+                "club_code": "CFL05",
+                "level": 2
+            },
+            {
+                "match_name": "WarriorCo 2022 Alaska USPSA Section Championship At BRSP",
+                "date": "06/24/2022",
+                "unix": 1656050400,
+                "practiscore_id": 172112,
+                "club": "Alaska Section",
+                "club_code": "AK02",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Cornhusker Classic USPSA by Ben Stoeger Pro Shop",
+                "date": "06/24/2022",
+                "unix": 1656050400,
+                "practiscore_id": 172158,
+                "club": "Eastern Nebraska Gun Club",
+                "club_code": "GP14",
+                "level": 2
+            },
+            {
+                "match_name": "Western PA Section  Champioship Presented By Muhlenkamp",
+                "date": "07/08/2022",
+                "unix": 1657260000,
+                "practiscore_id": 173577,
+                "club": "Greater Pittsburgh Gun Club",
+                "club_code": "WPA18",
+                "level": 2
+            },
+            {
+                "match_name": "Free State Kansas Championship 2022",
+                "date": "07/16/2022",
+                "unix": 1657951200,
+                "practiscore_id": 174602,
+                "club": "Millcreek Practical Shooters",
+                "club_code": "KS05",
+                "level": 2
+            },
+            {
+                "match_name": "Trident Armory Standby to Fly Benefit Match and Maine State Championship",
+                "date": "07/22/2022",
+                "unix": 1658469600,
+                "practiscore_id": 175171,
+                "club": "Hampden Rifle & Pistol Club, Inc.",
+                "club_code": "NE21",
+                "level": 2
+            },
+            {
+                "match_name": "2022 New York State Championship",
+                "date": "08/19/2022",
+                "unix": 1660888800,
+                "practiscore_id": 178053,
+                "club": "Rochester Brooks Practical Shooters",
+                "club_code": "EL02",
+                "level": 2
+            },
+            {
+                "match_name": "2022 SNS Illinois Sectional",
+                "date": "08/26/2022",
+                "unix": 1661493600,
+                "practiscore_id": 178828,
+                "club": "Chillicothe Sportsmens Club",
+                "club_code": "IL08",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Minnesota Section Championship Match Presented By Federal Premium ",
+                "date": "08/27/2022",
+                "unix": 1661580000,
+                "practiscore_id": 179075,
+                "club": "Minnesota Section",
+                "club_code": "MN04",
+                "level": 2
+            },
+            {
+                "match_name": "Berry\u2019s 2022 Utah State Championship presented by Homestead Cabinets",
+                "date": "09/01/2022",
+                "unix": 1662012000,
+                "practiscore_id": 179519,
+                "club": "Salt Lake Practical Shooting Assn.",
+                "club_code": "UT01",
+                "level": 2
+            },
+            {
+                "match_name": "2022 AZ State USPSA Championship presented by Ruger Firearms",
+                "date": "09/16/2022",
+                "unix": 1663308000,
+                "practiscore_id": 180159,
+                "club": "Prescott Practical Shooters",
+                "club_code": "AZ19",
+                "level": 2
+            },
+            {
+                "match_name": "RPGi Patriots\u2019 Day Level II USPSA Match",
+                "date": "09/09/2022",
+                "unix": 1662703200,
+                "practiscore_id": 180331,
+                "club": "RPGI",
+                "club_code": "FL38",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Idaho Section Championship ",
+                "date": "09/09/2022",
+                "unix": 1662703200,
+                "practiscore_id": 180476,
+                "club": "S.e. Idaho Practical Shooters",
+                "club_code": "ID02",
+                "level": 2
+            },
+            {
+                "match_name": "Brass Monkey Bullets Atomic Blast-2022 Tennessee Section Championship",
+                "date": "09/15/2022",
+                "unix": 1663221600,
+                "practiscore_id": 181000,
+                "club": "Orsa Practical Shooters",
+                "club_code": "TN11",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Carolina Classic Sponsored by The Blue Bullets",
+                "date": "09/16/2022",
+                "unix": 1663308000,
+                "practiscore_id": 181003,
+                "club": "Rowan County Wildlife Assoc.",
+                "club_code": "NC18",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Oregon Open Sectional Championship",
+                "date": "09/17/2022",
+                "unix": 1663394400,
+                "practiscore_id": 181183,
+                "club": "Southern Oregon Practical Shooters",
+                "club_code": "OR04",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Berry\u2019s Red Rock Rumble",
+                "date": "09/21/2022",
+                "unix": 1663740000,
+                "practiscore_id": 181806,
+                "club": "SUPS",
+                "club_code": "UT06",
+                "level": 2
+            },
+            {
+                "match_name": "2022 Greater Yellowstone Section Championship",
+                "date": "09/22/2022",
+                "unix": 1663826400,
+                "practiscore_id": 181868,
+                "club": "Fallon County Shooting Range",
+                "club_code": "GYS07",
+                "level": 2
+            }
+        ]
+    ],
+    "level3": [
+        [
+            {
+                "match_name": "2022 USPSA Area 6 Championship",
+                "date": "04/07/2022",
+                "unix": 1649311200,
+                "practiscore_id": 163972,
+                "club": "Rowan County Wildlife Assoc.",
+                "club_code": "NC18",
+                "level": 3
+            },
+            {
+                "match_name": "MAS USPSA Apr 24, 2022",
+                "date": "04/22/2022",
+                "unix": 1650607200,
+                "practiscore_id": 165781,
+                "club": "Monson Action Shooters",
+                "club_code": "NE23",
+                "level": 3
+            },
+            {
+                "match_name": "Team Motley Dragons Cup 2.0",
+                "date": "05/12/2022",
+                "unix": 1652335200,
+                "practiscore_id": 167354,
+                "club": "Laser Ninja Dragon League",
+                "club_code": "WT13",
+                "level": 3
+            },
+            {
+                "match_name": "2022 Ruger Classic Nationals",
+                "date": "05/21/2022",
+                "unix": 1653112800,
+                "practiscore_id": 168263,
+                "club": "USPSA National Events",
+                "club_code": "US01",
+                "level": 3
+            },
+            {
+                "match_name": "2022 EGW Area 8 Champioinship",
+                "date": "08/25/2022",
+                "unix": 1661407200,
+                "practiscore_id": 178742,
+                "club": "Ontelaunee Rod & Gun Club",
+                "club_code": "MID03",
+                "level": 3
+            },
+            {
+                "match_name": "2022 Ruger Area 7 Championship",
+                "date": "09/02/2022",
+                "unix": 1662098400,
+                "practiscore_id": 179598,
+                "club": "Hampden Rifle & Pistol Club, Inc.",
+                "club_code": "NE21",
+                "level": 3
+            },
+            {
+                "match_name": "2022 SIG Sauer Carry Optics Nationals presented by Federal",
+                "date": "09/07/2022",
+                "unix": 1662530400,
+                "practiscore_id": 180171,
+                "club": "USPSA National Events ",
+                "club_code": "US01",
+                "level": 3
+            },
+            {
+                "match_name": "2022 MasterPiece Arms Racegun Nationals Presented by Federal",
+                "date": "10/12/2022",
+                "unix": 1665554400,
+                "practiscore_id": 183968,
+                "club": "123",
+                "club_code": "US01",
+                "level": 3
+            },
+            {
+                "match_name": "2022 Blue Bullets Production and PCC Nationals Presented by Federal",
+                "date": "10/19/2022",
+                "unix": 1666159200,
+                "practiscore_id": 184732,
+                "club": "USPSA National Events",
+                "club_code": "US01",
+                "level": 3
+            }
+        ]
+    ]
+}

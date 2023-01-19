@@ -1,15 +1,54 @@
 from config import *
-from Utilities import practiscore as ps
+from Application import practiscore as ps
 
 
-def date_to_unix(date):
-    date = date.split('/')
-    date = datetime.datetime(2000 + int(date[2]), int(date[0]), int(date[1]))
-    return int(time.mktime(date.timetuple()))
+class Date:
+    def __init__(self, date=None):
+        self.text = None
+        self.datetime = None
+        self.unix = None
 
+        def _unix(datestamp):
+            return datetime.datetime.timestamp(datestamp)
 
-def unix_to_date(unix):
-    return datetime.datetime.utcfromtimestamp(unix).strftime('%m/%d/%Y')
+        def _datetime(datestr):
+            try:
+                string = datestr.split('/')
+                return datetime.datetime(2000 + int(string[2]), int(string[0]), int(string[1]))
+            except:
+                try:
+                    string = datestr.split(' ')
+                    string_day = string[0].split('-')
+                    string_hour = string[1].split(':')
+                    string_second = string_hour[2].split('.')
+                    return datetime.datetime(int(string_day[0]), int(string_day[1]), int(string_day[2]),
+                                             int(string_hour[0]), int(string_hour[1]), int(string_second[0]),
+                                             int(string_second[1]), tzinfo=datetime.timezone.utc)
+                except:
+                    string = datestr.split(' ')
+                    string_day = string[0].split('/')
+                    string_hour = string[1].split(':')
+                    if string[2] == 'PM' and int(string_hour[0]) < 12:
+                        return datetime.datetime(int(string_day[2]) + 2000, int(string_day[0]), int(string_day[1]),
+                                                 int(string_hour[0]) + 12, int(string_hour[1]), int(string_hour[2]),
+                                                 tzinfo=datetime.timezone.utc)
+                    else:
+                        return datetime.datetime(int(string_day[2]) + 2000, int(string_day[0]), int(string_day[1]),
+                                                 int(string_hour[0]), int(string_hour[1]), int(string_hour[2]),
+                                                 tzinfo=datetime.timezone.utc)
+
+        if isinstance(date, datetime.datetime):
+            self.text = str(date)
+            self.datetime = date
+            self.unix = _unix(date)
+        elif isinstance(date, float):
+            self.text = str(datetime.datetime.fromtimestamp(date))
+            self.datetime = datetime.datetime.fromtimestamp(date)
+            self.unix = date
+        elif isinstance(date, str):
+            self.text = date
+            self.datetime = _datetime(date)
+            self.unix = _unix(self.datetime)
 
 
 def new_json(file, data):
@@ -61,4 +100,3 @@ def open_database(file=None):
 def close_database(cursor, conn):
     cursor.close()
     conn.close()
-

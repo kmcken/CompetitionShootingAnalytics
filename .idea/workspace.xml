@@ -24,23 +24,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MatchResults/RawFiles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Data" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\USPSA\Analytics\CompetitionShootingAnalytics\MatchResults\txtFiles" />
-      <recent name="E:\USPSA\Analytics\CompetitionShootingAnalytics\MatchResults\RawFiles" />
-      <recent name="E:\USPSA\Analytics\CompetitionShootingAnalytics\MatchResults\jsonFiles" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\USPSA\Analytics\CompetitionShootingAnalytics\Data" />
       <recent name="E:\USPSA\Analytics\CompetitionShootingAnalytics\MatchResults\RawFiles" />
       <recent name="E:\USPSA\Analytics\CompetitionShootingAnalytics\MatchResults\jsonFiles" />
       <recent name="E:\USPSA\Analytics\CompetitionShootingAnalytics\Utilities" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\USPSA\Analytics\CompetitionShootingAnalytics\Application" />
+      <recent name="E:\USPSA\Analytics\CompetitionShootingAnalytics\MatchResults\txtFiles" />
+      <recent name="E:\USPSA\Analytics\CompetitionShootingAnalytics\MatchResults\RawFiles" />
+      <recent name="E:\USPSA\Analytics\CompetitionShootingAnalytics\MatchResults\jsonFiles" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="classifiers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CompetitionShootingAnalytics" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -48,11 +50,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Application" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Application/classifiers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="filehandler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CompetitionShootingAnalytics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utilities" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utilities/filehandler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,27 +105,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scsa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="CompetitionShootingAnalytics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utilities" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utilities/scsa.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CompetitionShootingAnalytics" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="uspsa" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="uspsa (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CompetitionShootingAnalytics" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -132,11 +134,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utilities" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Application" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utilities/uspsa.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Application/uspsa.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,10 +150,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.scsa" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.uspsa" />
-        <item itemvalue="Python.config" />
+        <item itemvalue="Python.classifiers" />
+        <item itemvalue="Python.filehandler" />
+        <item itemvalue="Python.uspsa (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -175,29 +177,29 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="442" key="FileChooserDialogImpl/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1671568246800" />
-    <state width="2539" height="364" key="GridCell.Tab.0.bottom" timestamp="1672444094614">
+    <state width="2539" height="282" key="GridCell.Tab.0.bottom" timestamp="1674151951619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="364" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1672444094614" />
-    <state width="1059" height="364" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-329.1080.1880@2560.-329.1080.1880" timestamp="1670920519889" />
+    <state width="2539" height="282" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1674151951619" />
+    <state width="1059" height="292" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-329.1080.1880@2560.-329.1080.1880" timestamp="1674065442690" />
     <state width="2539" height="376" key="GridCell.Tab.0.bottom/0.0.2560.1440/2560.-329.1080.1920@0.0.2560.1440" timestamp="1667444373323" />
-    <state width="2539" height="364" key="GridCell.Tab.0.center" timestamp="1672444094614">
+    <state width="2539" height="282" key="GridCell.Tab.0.center" timestamp="1674151951619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="364" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1672444094614" />
-    <state width="1059" height="364" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-329.1080.1880@2560.-329.1080.1880" timestamp="1670920519889" />
+    <state width="2539" height="282" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1674151951619" />
+    <state width="1059" height="292" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-329.1080.1880@2560.-329.1080.1880" timestamp="1674065442690" />
     <state width="2539" height="376" key="GridCell.Tab.0.center/0.0.2560.1440/2560.-329.1080.1920@0.0.2560.1440" timestamp="1667444373323" />
-    <state width="2539" height="364" key="GridCell.Tab.0.left" timestamp="1672444094613">
+    <state width="2539" height="282" key="GridCell.Tab.0.left" timestamp="1674151951619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="364" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1672444094613" />
-    <state width="1059" height="364" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-329.1080.1880@2560.-329.1080.1880" timestamp="1670920519889" />
+    <state width="2539" height="282" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1674151951619" />
+    <state width="1059" height="292" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-329.1080.1880@2560.-329.1080.1880" timestamp="1674065442690" />
     <state width="2539" height="376" key="GridCell.Tab.0.left/0.0.2560.1440/2560.-329.1080.1920@0.0.2560.1440" timestamp="1667444373323" />
-    <state width="2539" height="364" key="GridCell.Tab.0.right" timestamp="1672444094614">
+    <state width="2539" height="282" key="GridCell.Tab.0.right" timestamp="1674151951619">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="364" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1672444094614" />
-    <state width="1059" height="364" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-329.1080.1880@2560.-329.1080.1880" timestamp="1670920519889" />
+    <state width="2539" height="282" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1674151951619" />
+    <state width="1059" height="292" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-329.1080.1880@2560.-329.1080.1880" timestamp="1674065442690" />
     <state width="2539" height="376" key="GridCell.Tab.0.right/0.0.2560.1440/2560.-329.1080.1920@0.0.2560.1440" timestamp="1667444373323" />
     <state x="781" y="345" key="SettingsEditor" timestamp="1672352447901">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -207,9 +209,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1097" y="614" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1670959203609" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1672354459195">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1674076218879">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1672354459195" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.-329.1080.1880@0.0.2560.1400" timestamp="1674076218879" />
   </component>
 </project>

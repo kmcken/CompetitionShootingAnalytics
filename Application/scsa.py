@@ -24,7 +24,7 @@ def match_results(match_id=1):
 
     valid_match = False
     try:
-        alert = soup.find('div', attrs={'class': 'alert alert-danger'}).get_text()
+        soup.find('div', attrs={'class': 'alert alert-danger'}).get_text()
     except AttributeError:
         valid_match = True
         print('Match ID', match_id)
@@ -109,9 +109,9 @@ def write_match_result(scores, file=scsa_database):
 
     for score in scores:
         cursor = conn.cursor()
-        sql = '''INSERT INTO match_results(match_id,event,level,date,date_unix,date_upload,name,member,division,stage,time)
+        sql = '''INSERT INTO match_scores(match_id,event,level,date,date_unix,date_upload,name,member,division,stage,time)
                  VALUES(?,?,?,?,?,?,?,?,?,?,?)'''
-        cursor.execute(sql, [score.match_id, score.event, score.level, score.date, filehandler.date_to_unix(score.date),
+        cursor.execute(sql, [score.match_id, score.event, score.level, score.date, filehandler.Date(score.date).unix,
                              score.upload_date, score.name, score.member, score.division, score.classifier, score.time])
         conn.commit()
 

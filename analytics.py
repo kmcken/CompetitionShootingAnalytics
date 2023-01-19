@@ -64,6 +64,34 @@ def print_statistics(data, stage, div, hhf):
     print('')
 
 
+def classifier_distribution(data, stage, div, hf=True, cutoff=(1., 0.95, 0.85, 0.75, 0.60, 0.40)):
+    """
+    Calculates the statistical breakdown of a classifier by division.
+
+    :param data: array of scores
+    :type data: np.array
+    :param stage: stage number
+    :type stage: str
+    :param div: division
+    :type div: str
+    :param hf: hit factor scoring (True) or time plus (False)
+    :type hf: bool
+    :param cutoff: classifier cutoff by class
+    :type cutoff: tuple
+    :return: distribution percentile list
+    :rtype: list
+    """
+
+    if hf is True:
+        return (
+            100 - stats.percentileofscore(data, cutoff[0]),
+            100 - stats.percentileofscore(data, cutoff[1]),
+            100 - stats.percentileofscore(data, cutoff[2]),
+            100 - stats.percentileofscore(data, cutoff[3]),
+            100 - stats.percentileofscore(data, cutoff[4]),
+            100 - stats.percentileofscore(data, cutoff[5]))
+
+
 def hhf_what_if(stage, division, data, hhf, gm_pct=1, stats=True):
     if stats is True:
         print_statistics(data, stage, division, hhf)

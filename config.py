@@ -1,6 +1,9 @@
 import certifi
 import datetime
 import json
+import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
+from matplotlib.patches import Rectangle
 import numpy as np
 import scipy as sp
 import os
@@ -16,11 +19,43 @@ import warnings
 
 version = 'v0.2.2'
 root = os.path.dirname(os.path.abspath(__file__))
-uspsa_database = r'E:\USPSA\Analytics\USPSAnalytics\Python\classifier_data.db'
+# uspsa_database = r'E:\USPSA\Analytics\USPSAnalytics\Python\classifier_data.db'
+uspsa_database = r'E:\USPSA\Analytics\CompetitionShootingAnalytics\Data\uspsa.db'
 scsa_database = r'E:\USPSA\Analytics\CompetitionShootingAnalytics\Data\scsa.db'
+classifier_list_file = root + r'\Data\classifier_list.csv'
+classifier_hhf_file = root + r'\Data\classifiers_hhf.csv'
 
 HEADER = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
 PROXY = {'https': 'https://brd-customer-hl_6d912e82-zone-unblocker:aa0ou9yl15z7@zproxy.lum-superproxy.io:22225'}
 CERTS = certifi.where()
 http = urllib3.PoolManager(certs_res='CERT_REQUIRED', ca_certs=CERTS)
 warnings.filterwarnings('ignore')
+
+uspsa_divisions = (
+    {'name': 'Open', 'short': 'OPN'},
+    {'name': 'Limited', 'short': 'LTD'},
+    {'name': 'Limited 10', 'short': 'L10'},
+    {'name': 'PCC', 'short': 'PCC'},
+    {'name': 'Carry Optics', 'short': 'CO'},
+    {'name': 'Production', 'short': 'PROD'},
+    {'name': 'Single Stack', 'short': 'SS'},
+    {'name': 'Revolver', 'short': 'REV'})
+
+scsa_divisions = (
+    {'name': 'Open', 'short': 'OPN'},
+    {'name': 'Limited', 'short': 'LTD'},
+    {'name': 'Carry Optics', 'short': 'CO'},
+    {'name': 'Iron Sight Revolver', 'short': 'ISR'},
+    {'name': 'Optical Sight Revolver', 'short': 'OSR'},
+    {'name': 'PCC Iron', 'short': 'PCCI'},
+    {'name': 'PCC Optics', 'short': 'PCCO'},
+    {'name': 'Production', 'short': 'PROD'},
+    {'name': 'Rimfire Pistol Iron', 'short': 'RFPI'},
+    {'name': 'Rimfire Pistol Open', 'short': 'RFPO'},
+    {'name': 'Rimfire Rifle Iron', 'short': 'RFRI'},
+    {'name': 'Rimfire Rifle Open', 'short': 'RFRO'},
+    {'name': 'Single Stack', 'short': 'SS'})
+
+colors = ['#3d4978', 'silver', '#af3f38']
+nodes = [0.0, 0.5, 1.0]
+cmap = LinearSegmentedColormap.from_list("mycmap", list(zip(nodes, colors)))
