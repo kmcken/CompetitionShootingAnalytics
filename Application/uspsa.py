@@ -103,8 +103,18 @@ def match_results(match_id=1):
     except AttributeError:
         valid_match = True
         print('Match ID', match_id)
+
+    try:
+        soup.find('div', attrs={'class': 'card-body d-none d-lg-block'}).get_text().split('\n')
+    except AttributeError:
+        valid_match = False
     else:
-        print('Match ID', match_id, 'is an invalid match')
+        url = r"https://uspsa.org/match-results-details?index=" + str(match_id) + "&action=stages"
+        soup = BeautifulSoup(requests.get(url, headers=HEADER, verify=False).content, features='lxml')
+        try:
+            soup.find('table', attrs={'class': 'table table-striped table-responsive'}).findAll("tr")
+        except AttributeError:
+            valid_match = False
 
     if valid_match is True:
         event = soup.find('div', attrs={'class': 'card-body d-none d-lg-block'}).get_text().split('\n')
@@ -166,10 +176,10 @@ def match_results(match_id=1):
                         try:
                             score.classpct = float(''.join([n for n in classpct if n.isdigit()])) / 100
                         except:
-                            break
-                        else:
-                            scores.append(score)
+                            pass
+                        scores.append(score)
         return scores
+    print('Match ID', match_id, 'is an invalid match')
 
 
 def write_match_result(scores, file=uspsa_database):
@@ -182,7 +192,7 @@ def write_match_result(scores, file=uspsa_database):
 
     for score in scores:
         cursor = conn.cursor()
-        sql = '''INSERT INTO match_results(uspsa_id,practiscore_id,event,club,level,date,date_unix,upload_date,upload_date_unix,classifier_code,classifier_title,member_name,member_number,class,division,hit_factor,class_pct,points,time)
+        sql = '''INSERT INTO match_scores(match_id,practiscore_id,event,club,level,date,date_unix,upload_date,upload_date_unix,classifier_code,classifier_title,member_name,member_number,class,division,hitfactor,class_pct,points,time)
                  VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)'''
         cursor.execute(sql, [score.uspsa, score.practiscore, score.event, score.club, score.level, score.date.text,
                              score.date.unix, score.date_upload.text, score.date_upload.unix, score.classifier.code,
@@ -198,6 +208,66 @@ def download_score(start_id=1, end_id=10000, file=uspsa_database):
         scores = match_results(i)
         if scores:
             write_match_result(scores, file)
+
+
+class Club:
+    def __int__(self):
+        self.id = None
+        self.code = None
+        self.name = None
+        self.section = None
+        self.address = None
+        self.city = None
+        self.state = None
+        self.zip = None
+        self.md = None
+        self.md_phone = None
+        self.md_email = None
+        self.sc = None
+        self.sc_email = None
+
+    def write_db(self, file=uspsa_database):
+        try:
+            (cursor, conn) = filehandler.open_database(file)
+        except FileNotFoundError:
+            raise FileNotFoundError
+        except sqlite3.InterfaceError:
+            raise FileNotFoundError
+
+        try:
+            sc_email = self.sc_email.lower()
+        except:
+            sc_email = self.sc_email
+
+        try:
+            md_email = self.md_email.lower()
+        except:
+            md_email = self.md_email
+
+        cursor = conn.cursor()
+        sql = '''INSERT INTO clubs(id,name,code,address,city,state,zip,contact_name,contact_phone,contact_email,section,section_coordinator,section_email)
+                 VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)'''
+        cursor.execute(sql, [self.id, self.name, self.code, self.address, self.city, self.state, self.zip, self.md,
+                             self.md_phone, md_email, self.section, self.sc, sc_email])
+        conn.commit()
+        filehandler.close_database(cursor, conn)
+
+
+def update_club(name, code, file=uspsa_database):
+    try:
+        (cursor, conn) = filehandler.open_database(file)
+    except FileNotFoundError:
+        raise FileNotFoundError
+    except sqlite3.InterfaceError:
+        raise FileNotFoundError
+
+    cursor = conn.cursor()
+    sql = '''UPDATE match_scores
+             SET club_code=?
+             WHERE club=?'''
+    cursor.execute(sql, [code, name])
+    conn.commit()
+    filehandler.close_database(cursor, conn)
 
 
 def classification(division='Open', member='L3137'):
@@ -356,6 +426,175 @@ def read_match_count(start_date, end_date, file=uspsa_database):
     else:
         filehandler.close_database(cursor, conn)
     return data[0][0]
+
+
+def read_member_division_count(start_date, end_date, member, division, file=uspsa_database):
+    """
+    Counts scores by division of specified member between the start and end dates
+
+    :param start_date: Start date MM/DD/YY
+    :type start_date: str
+    :param end_date: End date MM/DD/YY
+    :type end_date: str
+    :param member: member number
+    :type member: str
+    :param division: division name
+    :type division: str
+    :param file: database file path
+    :type file: str
+    :return: unique match count
+    :rtype: int
+    """
+
+    start_unix = filehandler.Date(start_date).unix
+    end_unix = filehandler.Date(end_date).unix
+
+    try:
+        (cursor, conn) = filehandler.open_database(file)
+    except FileNotFoundError:
+        raise FileNotFoundError
+    except sqlite3.InterfaceError:
+        raise FileNotFoundError
+
+    sql = '''SELECT COUNT(hitfactor) FROM match_scores
+             WHERE member_number=? AND division=? AND date_unix BETWEEN ? AND ?'''
+    cursor.execute(sql, (member, division, start_unix, end_unix))
+
+    try:
+        data = cursor.fetchall()
+    except:
+        filehandler.close_database(cursor, conn)
+        raise IndexError('DATABASE: Read error.')
+    else:
+        filehandler.close_database(cursor, conn)
+    return data[0][0]
+
+
+def read_member_numbers(start_date, end_date, file=uspsa_database):
+    """
+    Reads list of unique member numbers used between the start and end dates
+
+    :param start_date: Start date MM/DD/YY
+    :type start_date: str
+    :param end_date: End date MM/DD/YY
+    :type end_date: str
+    :param file: database file path
+    :type file: str
+    :return: unique match count
+    :rtype: list
+    """
+
+    start_unix = filehandler.Date(start_date).unix
+    end_unix = filehandler.Date(end_date).unix
+
+    try:
+        (cursor, conn) = filehandler.open_database(file)
+    except FileNotFoundError:
+        raise FileNotFoundError
+    except sqlite3.InterfaceError:
+        raise FileNotFoundError
+
+    sql = '''SELECT DISTINCT member_number FROM match_scores
+             WHERE date_unix BETWEEN ? AND ?'''
+    cursor.execute(sql, (start_unix, end_unix))
+
+    try:
+        data = cursor.fetchall()
+    except:
+        filehandler.close_database(cursor, conn)
+        raise IndexError('DATABASE: Read error.')
+    else:
+        filehandler.close_database(cursor, conn)
+        members = list()
+        for item in data:
+            members.append(item[0])
+        return members
+
+
+def read_member_list(start_date, end_date, file=uspsa_database):
+    """
+    Returns a list of members
+
+    :param start_date: Start date MM/DD/YY
+    :type start_date: str
+    :param end_date: End date MM/DD/YY
+    :type end_date: str
+    :param file: database file path
+    :type file: str
+    :return: data
+    :rtype: list
+    """
+
+    start_unix = filehandler.Date(start_date).unix
+    end_unix = filehandler.Date(end_date).unix
+
+    try:
+        (cursor, conn) = filehandler.open_database(file)
+    except FileNotFoundError:
+        raise FileNotFoundError
+    except sqlite3.InterfaceError:
+        raise FileNotFoundError
+
+    sql = '''SELECT DISTINCT member_number FROM match_scores
+             WHERE date_unix BETWEEN ? AND ?'''
+    cursor.execute(sql, (start_unix, end_unix))
+
+    try:
+        data = cursor.fetchall()
+    except:
+        filehandler.close_database(cursor, conn)
+        raise IndexError('DATABASE: Read error.')
+    else:
+        filehandler.close_database(cursor, conn)
+
+        members = list()
+        for item in data:
+            if item[0].upper() not in members:
+                members.append(item[0])
+        return members
+
+
+def read_member_classification_list(start_date, end_date, member_number, division, file=uspsa_database):
+    """
+    Returns a list of members
+
+    :param start_date: Start date MM/DD/YY
+    :type start_date: str
+    :param end_date: End date MM/DD/YY
+    :type end_date: str
+    :param member_number: Member Number
+    :type member_number: str
+    :param division: division long name
+    :type division: str
+    :param file: database file path
+    :type file: str
+    :return: data
+    :rtype: list
+    """
+
+    start_unix = filehandler.Date(start_date).unix
+    end_unix = filehandler.Date(end_date).unix
+
+    try:
+        (cursor, conn) = filehandler.open_database(file)
+    except FileNotFoundError:
+        raise FileNotFoundError
+    except sqlite3.InterfaceError:
+        raise FileNotFoundError
+
+    sql = '''SELECT DISTINCT class, date, match_id FROM match_scores
+             WHERE member_number=? AND division=? AND date_unix BETWEEN ? AND ?
+             ORDER BY date_unix ASC'''
+    cursor.execute(sql, (member_number, division, start_unix, end_unix))
+
+    try:
+        data = cursor.fetchall()
+    except:
+        filehandler.close_database(cursor, conn)
+        raise IndexError('DATABASE: Read error.')
+    else:
+        filehandler.close_database(cursor, conn)
+        return data
 
 
 def classifier_list(file=classifier_list_file):
